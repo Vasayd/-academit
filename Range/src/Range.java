@@ -11,7 +11,7 @@ public class Range {
         this.to = to;
     }
 
-  /*  public double getFrom() {
+    public double getFrom() {
         return from;
     }
 
@@ -26,7 +26,7 @@ public class Range {
     public void setTo(double to) {
         this.to = to;
     }
-*/
+
     public void rangeLenght() {
         System.out.println("Длинна диапозона:" + (to - from));
     }

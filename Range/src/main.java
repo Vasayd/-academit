@@ -1,9 +1,23 @@
 import java.util.Scanner;
 
 public class main {
+
+
+    public double xim() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите число:");
+        return scanner.nextDouble();
+    }
     public static void main(String[] args) {
 
-        Range range = new Range(0, 100);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите нижний порог диапозона:");
+        double from = scanner.nextDouble();
+
+        System.out.print("Введите верхний порог диапозона:");
+        double to = scanner.nextDouble();
+
+        Range range = new Range(from, to);
         range.rangeLenght();
 
         if (range.isInside()) {
@@ -13,9 +27,4 @@ public class main {
         }
     }
 
-    public double xim() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число:");
-        return scanner.nextDouble();
-    }
 }
