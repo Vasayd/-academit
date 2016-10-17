@@ -1,5 +1,4 @@
-
-import java.util.Scanner;
+package ru.academits.dyachenko.range;
 
 public class Range {
     private double from;
@@ -27,19 +26,12 @@ public class Range {
         this.to = to;
     }
 
-    public void rangeLenght() {
-        System.out.println("Длинна диапозона:" + (to - from));
+    public double getLength() {
+        return (to - from);
     }
 
-    public boolean isInside() {
+    public boolean isInside(double x) {
+        return (x >= from && x <= to);
 
-        main p = new main();
-        double x = p.xim();
-
-        if ((x >= from && x <= to)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 }
