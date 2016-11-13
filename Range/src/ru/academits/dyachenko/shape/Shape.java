@@ -1,14 +1,16 @@
 package ru.academits.dyachenko.shape;
 
-public interface Shape {
-    public double getWidth();
+public  interface Shape {
 
-    public double getHeight();
+    String getName();
 
-    public double getArea();
+    double getWidth();
 
-    public double getPerimeter();
+    double getHeight();
 
+   double getArea();
+
+    double getPerimeter();
 
 
 }

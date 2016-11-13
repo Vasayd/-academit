@@ -2,9 +2,15 @@ package ru.academits.dyachenko.shape;
 
 public class Square implements Shape {
     private double sideLength;
+    private String name;
 
-    public Square(double sideLength) {
+    public Square(String name, double sideLength) {
+        this.name = name;
         this.sideLength = sideLength;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -26,5 +32,6 @@ public class Square implements Shape {
     public double getPerimeter() {
         return (sideLength * 4);
     }
+
 }
 

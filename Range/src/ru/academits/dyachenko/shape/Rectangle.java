@@ -1,14 +1,18 @@
 package ru.academits.dyachenko.shape;
 
 public class Rectangle implements Shape {
+    private String name;
     private double width;
     private double height;
 
-    public Rectangle(double width, double height) {
+    public Rectangle(String name, double width, double height) {
+        this.name = name;
         this.width = width;
         this.height = height;
     }
-
+    public String getName() {
+        return name;
+    }
 
     @Override
     public double getWidth() {

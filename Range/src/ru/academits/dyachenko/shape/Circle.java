@@ -1,10 +1,17 @@
 package ru.academits.dyachenko.shape;
 
 public class Circle implements Shape {
+    private String name;
     private double radius;
 
-    public Circle(double radius) {
+    public Circle(String name, double radius) {
+        this.name = name;
         this.radius = radius;
+    }
+
+
+    public String getName() {
+        return name;
     }
 
     @Override
