@@ -1,7 +1,8 @@
 package ru.academits.dyachenko.shape;
+
 import java.util.Comparator;
 
-public class SortedByAreaComparator implements Comparator <Shape> {
+public class SortedByAreaComparator implements Comparator<Shape> {
 
     public int compare(Shape obj1, Shape obj2) {
 
@@ -17,4 +18,8 @@ public class SortedByAreaComparator implements Comparator <Shape> {
         }
     }
 
+
 }
+
+
+
